@@ -1,38 +1,137 @@
+/* src/App.css */
+
 .App {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  background-color: #f4f4f9;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.profile {
+  padding: 20px;
+  background: #282c34;
   color: white;
 }
 
-.App-link {
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  margin: 10px 0 5px;
+  font-size: 2em;
+}
+
+.profile h2 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  font-weight: 300;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.skills, .experience, .contact {
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.skills h2, .experience h2, .contact h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+
+.experience {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.experience h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.experience p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.experience ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.experience ul li {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.contact {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.contact p strong {
+  display: inline-block;
+  width: 80px;
+  color: #333;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact a:visited {
+  color: #0056b3;
 }
